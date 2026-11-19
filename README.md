@@ -8,6 +8,11 @@
 Classifies a news article as **real** or **fake** with a TF-IDF + Logistic Regression model, served
 through a small Streamlit app that also shows the model's confidence.
 
+**🔴 Live demo: [exotic-siddharth.github.io/fake-news](https://exotic-siddharth.github.io/fake-news/)**
+The trained model's vocabulary, IDF weights and coefficients are exported to the page, so it runs
+entirely in the browser (nothing is sent to a server) and shows which words pushed the prediction
+each way. Its probabilities match the Python model on 300 held-out articles.
+
 ## Results
 
 Held-out 20% split of 44,898 articles (21,417 real, 23,481 fake):
